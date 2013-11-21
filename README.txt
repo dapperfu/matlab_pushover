@@ -1,6 +1,6 @@
 matlab_pushover
 ===============
-% PUSHOVER - Push notifications to the <a href="http://pushover.net">Pushover</a> service.
+% PUSHOVER - Push notifications to the Pushover (http://pushover.net) service.
 % 
 % pushover
 %   Prints this help, the available options for the 'sound' setting and the
@@ -29,7 +29,7 @@ matlab_pushover
 %        priority: ''
 %       timestamp: ''
 %           sound: 'pushover'
-% For full description of options see the <a href="https://pushover.net/api">Pushover REST API</a>
+% For full description of options see the Pushover REST API (https://pushover.net/api)
 %
 % timestamp is in Matlab serial date instead of Unix timestamp. This allows
 %   for better integration with Matlab. If timestamp is a string 'datenum'
@@ -40,18 +40,20 @@ matlab_pushover
 %   command line it defaults to empty.
 %
 % If API token is empty (opts.token='') then the falls back to sendmail.
-%   (sendmail must be configured: <a href="http://www.mathworks.com/support/solutions/en/data/1-3PRRDV/">sendmail setup</a>)
+%   (sendmail must be configured: sendmail setup (http://www.mathworks.com/support/solutions/en/data/1-3PRRDV/)
 %
 % Pushover apps are limited to 7,500. If you plan on using pushover.m,
-%   please create your own application at <a href="https://pushover.net/apps/build">https://pushover.net/apps/build</a> (<a href="http://www.mathworks.com/matlabcentral/fileexchange/24085">Matlab Icon</a>)
+%   please create your own application at https://pushover.net/apps/build
 %
-% Pushover Clients: <a href="https://pushover.net/clients/android">Android</a> & <a href="https://pushover.net/clients/ios">iOS</a>
+% Pushover Clients:
+%	Android: https://pushover.net/clients/android
+%	iOs    :https://pushover.net/clients/ios
 %
 % See also urlread, sendmail, pushoverExamples
 %
 % Examples:
 % % Minimum required to send message.
-% opts.user='ohterejqucyumllhnnvuqjvnjywoqp'; % From your <a href="https://pushover.net/login">Dashboard</a>
+% opts.user='ohterejqucyumllhnnvuqjvnjywoqp'; % From your Dashboard(https://pushover.net/login)
 % pushover('Hello World!',opts);
 %
 % % Set default device to phone and sound to 'Piano Bar'.
