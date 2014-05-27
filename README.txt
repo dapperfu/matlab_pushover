@@ -40,20 +40,21 @@ matlab_pushover
 %   command line it defaults to empty.
 %
 % If API token is empty (opts.token='') then the falls back to sendmail.
-%   (sendmail must be configured: sendmail setup (http://www.mathworks.com/support/solutions/en/data/1-3PRRDV/)
+%   sendmail must be configured: sendmail setup (http://www.mathworks.com/support/solutions/en/data/1-3PRRDV/)
 %
 % Pushover apps are limited to 7,500. If you plan on using pushover.m,
 %   please create your own application at https://pushover.net/apps/build
 %
 % Pushover Clients:
 %	Android: https://pushover.net/clients/android
-%	iOs    :https://pushover.net/clients/ios
+%	iOs    : https://pushover.net/clients/ios
 %
 % See also urlread, sendmail, pushoverExamples
 %
 % Examples:
 % % Minimum required to send message.
-% opts.user='ohterejqucyumllhnnvuqjvnjywoqp'; % From your Dashboard(https://pushover.net/login)
+% opts.user='ohterejqucyumllhnnvuqjvnjywoqp';
+% % From your Dashboard (https://pushover.net/login)
 % pushover('Hello World!',opts);
 %
 % % Set default device to phone and sound to 'Piano Bar'.

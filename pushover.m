@@ -39,9 +39,9 @@ function varargout=pushover(varargin)
 %   command line it defaults to empty.
 %
 % If API token is empty (opts.token='') then the falls back to sendmail.
-%   (sendmail must be configured: <a href="http://www.mathworks.com/support/solutions/en/data/1-3PRRDV/">sendmail setup</a>)
+%   sendmail must be configured: <a href="http://www.mathworks.com/support/solutions/en/data/1-3PRRDV/">sendmail setup</a>
 %
-% Pushover apps are limited to 7,500. If you plan on using pushover.m,
+% Pushover apps are limited to 7,500. If you plan on using pushover.m a lot,
 %   please create your own application at <a href="https://pushover.net/apps/build">https://pushover.net/apps/build</a> (<a href="http://www.mathworks.com/matlabcentral/fileexchange/24085">Matlab Icon</a>)
 %
 % Pushover Clients: <a href="https://pushover.net/clients/android">Android</a> & <a href="https://pushover.net/clients/ios">iOS</a>
